@@ -28,10 +28,11 @@ def id_selection_page():
     col_select, col_confirm = st.columns([0.6, 0.4])
 
     with col_select:
-        # Simplified ID and side selection
+        # Simplified ID and side selection with default index
         selected_case = st.radio(
             "Select Case",
-            options=["Case 1: ID 900099 (LEFT)", "Case 2: ID 9995338 (RIGHT)"]
+            options=["Case 1: ID 900099 (LEFT)", "Case 2: ID 9995338 (RIGHT)"],
+            index=0  # Default to the first option
         )
         
         # Set ID and side based on selection
