@@ -8,17 +8,8 @@ import os
 
 st.set_page_config(page_title='OAI Data Viewer', layout="wide")
 
+
 # Add the custom CSS here
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: black;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 def main():
 
